@@ -53,13 +53,22 @@ body {
   margin-top: 6em;
 }
 
-.question.error {
-	background-color: #e74c3c;
+.question.error .question-answers:after{
+  content: "✘";
+  font-size: 60px;
+  color: #ff0000;
+  margin-left: 600px
+      }
+
+
+.question.success .question-answers:after {
+  content: "✓";
+  font-size: 60px;
+  color: rgb(13, 196, 50);
+  margin-left: 600px;
+  font-weight: bold;
 }
 
-.question.success {
-	background-color: #2ecc71;
-}
 
 .question .question-headline {
 	font-weight: 700;
